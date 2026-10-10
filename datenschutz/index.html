@@ -27,7 +27,7 @@
         <ul>
           <li><strong>Schülerdaten speichert Teachify verschlüsselt auf deinem Gerät.</strong> Klassenlisten liest dein iPhone oder iPad selbst, Diktate wandelt es selbst in Text um.</li>
           <li><strong>Abgleich und Klassenteams sind Ende-zu-Ende-verschlüsselt.</strong> Teachify kann diese Inhalte nicht lesen. Lesbar sind Konto- und technische Metadaten, die Abschnitt 3 vollständig aufzählt.</li>
-          <li><strong>KI nur mit deiner Erlaubnis.</strong> Vor jeder Anfrage ersetzt dein Gerät Namen durch Platzhalter und schwärzt erkannte Namen auf Fotos. Verarbeitet werden die Anfragen von OpenAI, auch in den USA. Der Schutz hat Grenzen, die Abschnitt 4 nennt.</li>
+          <li><strong>KI nur mit deiner Erlaubnis.</strong> Vor jeder Anfrage ersetzt dein Gerät Namen durch Platzhalter und schwärzt erkannte Namen und Gesichter auf Fotos. Verarbeitet werden die Anfragen von OpenAI, auch in den USA. Der Schutz hat Grenzen, die Abschnitt 4 nennt.</li>
           <li><strong>Kein Tracking.</strong> Teachify nutzt keine Analyse-, Werbe- oder Trackingdienste und keine Cookies.</li>
           <li><strong>Für Schulleitungen</strong> fasst Abschnitt 11 alles für eine Genehmigung zusammen.</li>
         </ul>
@@ -91,7 +91,7 @@
               </tr>
               <tr>
                 <td>KI-Hilfe</td>
-                <td>Anfragetext mit Platzhaltern statt erkannter Namen und Kontext wie Klassenkürzel, Fach, Schulform, Bundesland und Unterrichtsstil; Fotos mit geschwärzten Namen; beim Stundenplan-Import dein Stundenplan als Foto oder PDF; keine Sprachaufnahmen, keine Klassenlistenfotos. KI-Ergebnisse und Zwischenstände</td>
+                <td>Anfragetext mit Platzhaltern statt erkannter Namen und Kontext wie Klassenkürzel, Fach, Schulform, Bundesland und Unterrichtsstil; Fotos mit geschwärzten Namen und Gesichtern, auch dein Stundenplan (aus einem PDF ein Bild ohne dessen Dokumentangaben); keine Sprachaufnahmen, keine Klassenlistenfotos. KI-Ergebnisse und Zwischenstände</td>
                 <td>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung, jederzeit widerrufbar)</td>
                 <td>Supabase (Weiterleitung und Aufbewahrung der Ergebnisse); OpenAI Ireland Ltd. als Auftragsverarbeiter, Verarbeitung auch in den USA</td>
                 <td>Anfragen speichert Teachify nicht. KI-Ergebnisse und Zwischenstände bis zu 30 Tage, verschlüsselt mit einem Schlüssel des Servers. OpenAI bis zu 30 Tage zur Missbrauchserkennung, Zwischenspeicher für wiederkehrende Anweisungen bis zu 24 Stunden</td>
@@ -164,11 +164,11 @@
         <ul>
           <li>Namen aus deinen Klassenlisten werden zu Platzhaltern wie S1 und S2: der ganze Name unabhängig von Groß- und Kleinschreibung, Leerzeichen, Bindestrich und Umlautschreibung („Mueller“), als „Vorname Nachname“ und „Nachname, Vorname“; der Vorname allein in der Schreibweise der Liste, mit großem Anfangsbuchstaben oder in Großbuchstaben, jeweils auch im Genitiv. Im Unterrichtsstil schützt das Gerät deine eigenen Worte; die festen Auswahlpunkte bleiben stehen.</li>
           <li>Andere Namen, die das Gerät mit Apples Sprachverarbeitung auf dem Gerät (NaturalLanguage) als Personennamen erkennt, und Namen nach „Frau“ oder „Herr“ werden zu Platzhaltern wie P1 und P2.</li>
-          <li>Auf Fotos schwärzt das Gerät Wörter, die zu einem Namen deiner Klassenlisten passen oder als Personenname erkannt werden, bevor das Bild gesendet wird. Fotos werden dabei neu gespeichert, ohne Ortsangaben und andere Metadaten. Scheitert die Erkennung, sendet Teachify das Foto nicht.</li>
-          <li>Ausnahme Stundenplan-Import: Deinen eigenen Stundenplan sendet das Gerät ungeschwärzt, ein Foto neu gespeichert ohne Metadaten, ein PDF unverändert samt seinen Dokumentangaben. Er kann Namen oder Kürzel von Kolleginnen und Kollegen und den Namen deiner Schule enthalten.</li>
+          <li>Auf Fotos schwärzt das Gerät Wörter, die zu einem Namen deiner Klassenlisten passen oder als Personenname erkannt werden, und Gesichter, die die Bilderkennung des Geräts (Apple Vision) findet, mit einem breiten Rand für Haare und Kinn, bevor das Bild gesendet wird. Fotos werden dabei neu gespeichert, ohne Ortsangaben und andere Metadaten. Scheitert die Erkennung, sendet Teachify das Foto nicht.</li>
+          <li>Auch deinen Stundenplan behandelt das Gerät so. Ein PDF wandelt es vorher auf dem Gerät in ein Bild um, höchstens zwei Seiten; die Dokumentangaben des PDFs, etwa Autor und Titel, gehen nicht mit. Kürzel von Kolleginnen und Kollegen, die nicht als Namen erkennbar sind, und der Name deiner Schule können sichtbar bleiben.</li>
           <li>In die Antwort setzt erst dein Gerät die Namen wieder ein.</li>
         </ul>
-        <p><strong>Grenzen des Schutzes.</strong> Handschrift, Spitznamen, ungewöhnliche Schreibweisen und einen klein geschriebenen Vornamen allein erkennt das Gerät nicht immer. Gesichter auf Fotos erkennt und schwärzt es nicht. Platzhalter verdecken Namen, aber nicht jeden Zusammenhang. Schreib deshalb keine Gesundheitsangaben oder andere sehr persönliche Einzelheiten in KI-Anfragen und fotografiere keine Personen.</p>
+        <p><strong>Grenzen des Schutzes.</strong> Handschrift, Spitznamen, ungewöhnliche Schreibweisen und einen klein geschriebenen Vornamen allein erkennt das Gerät nicht immer, ebenso kleine, verdeckte oder abgewandte Gesichter. Platzhalter verdecken Namen, aber nicht jeden Zusammenhang. Schreib deshalb keine Gesundheitsangaben oder andere sehr persönliche Einzelheiten in KI-Anfragen und fotografiere keine Personen. Ältere App-Versionen schwärzen keine Gesichter, senden deinen Stundenplan ungeschwärzt und ein PDF unverändert; aktualisiere Teachify deshalb.</p>
         <p>Die Anfragen verarbeitet OpenAI in unserem Auftrag. Vertragspartner ist die OpenAI Ireland Ltd. (Dublin); verarbeitet wird auch bei der OpenAI OpCo, LLC in den USA. Teachify sendet OpenAI keine Kennung von dir und lässt Anfragen dort nicht für einen späteren Abruf speichern. OpenAI nutzt die Daten nicht zum Training und speichert sie bis zu 30 Tage, um Missbrauch zu erkennen.</p>
         <p>Teachify speichert deine Anfragen nicht. Die KI-Ergebnisse bewahrt Teachify bis zu 30 Tage auf, damit ein bezahltes Ergebnis nicht verloren geht und du es wieder öffnen kannst. Sie liegen verschlüsselt mit einem Schlüssel des Servers in Frankfurt und enthalten die Platzhalter statt der erkannten Namen. Löschst du dein Konto, löscht Teachify sie mit ihm.</p>
         <p>KI-Ergebnisse sind Vorschläge: Prüfe sie, bevor du sie verwendest. Eine automatisierte Entscheidung im Sinne von Art. 22 DSGVO trifft Teachify nicht.</p>
@@ -177,7 +177,7 @@
       <section aria-labelledby="berechtigungen">
         <h2 id="berechtigungen">5. Berechtigungen auf deinem Gerät</h2>
         <ul>
-          <li><strong>Kamera und Fotos:</strong> für Klassenlisten (Auswertung auf dem Gerät), Material-Scans (vor einer KI-Anfrage geschwärzt) und die Kopplung deiner Geräte per QR-Code. Zum Sichern von Bildern in deiner Mediathek, etwa deines Sicherungscodes.</li>
+          <li><strong>Kamera und Fotos:</strong> für Klassenlisten (Auswertung auf dem Gerät), Material-Scans und den Stundenplan-Import (vor einer KI-Anfrage geschwärzt) und die Kopplung deiner Geräte per QR-Code. Zum Sichern von Bildern in deiner Mediathek, etwa deines Sicherungscodes.</li>
           <li><strong>Mikrofon und Spracherkennung:</strong> für Diktat und Sprachnotizen. Die Aufnahme wird auf dem Gerät in Text umgewandelt und danach gelöscht.</li>
           <li><strong>Face ID oder Touch ID:</strong> nur für die App-Sperre, wenn du sie einschaltest.</li>
           <li><strong>Mitteilungen:</strong> Erinnerungen plant die App auf dem Gerät; es gibt keinen Push-Dienst.</li>
@@ -231,7 +231,7 @@
           <li>Schülerdaten nur auf dem Gerät der Lehrkraft, in einer mit SQLCipher (AES-256) verschlüsselten Datenbank, Schlüssel im iOS-Schlüsselbund, nur auf diesem Gerät und nur entsperrt nutzbar; Zugriffsschutz über die Gerätesperre, auf Wunsch zusätzlich App-Sperre mit Face ID, Touch ID oder Gerätecode; Inhalt im App-Umschalter verdeckt.</li>
           <li>Texterkennung von Klassenlisten und Spracherkennung nur auf dem Gerät.</li>
           <li>Abgleich und Klassenteams Ende-zu-Ende-verschlüsselt (AES-256-GCM); der Server in Frankfurt speichert davon nur Chiffretext.</li>
-          <li>KI nur nach Einwilligung, nur mit Platzhaltern statt erkannter Namen und mit geschwärzten Fotos; scheitert der Namensschutz, sendet Teachify nichts.</li>
+          <li>KI nur nach Einwilligung, nur mit Platzhaltern statt erkannter Namen und mit geschwärzten Namen und Gesichtern auf Fotos; scheitert der Schutz, sendet Teachify nichts.</li>
           <li>Zugriffsregeln auf jeder Server-Tabelle (Row Level Security); Gastkonten ohne Zugriff auf Abgleich und Dateien; Server-Funktionen protokollieren keine Inhalte.</li>
           <li>Keine Analyse-, Werbe- oder Trackingdienste, keine Weitergabe an Dritte zu eigenen Zwecken.</li>
           <li>Datenexport, Löschen von Klassen und abgeschlossenen Schuljahren und endgültige Kontolöschung in der App; Löschfristen auf dem Server laut Abschnitt 3.</li>
@@ -239,7 +239,7 @@
         <p><strong>Cloud-Backups.</strong> Das NRW-Genehmigungsformular schließt Backups dienstlicher Daten in Cloud-Dienste ohne Vertrag zur Auftragsverarbeitung aus und nennt ausdrücklich Systembackups mobiler Geräte. Teachify nimmt sich derzeit nicht selbst vom iCloud-Backup aus. Die Lehrkraft schaltet Teachify deshalb in den iCloud-Backup-Einstellungen aus oder nutzt den Erweiterten Datenschutz für iCloud.</p>
         <p><strong>Datensparsamste Nutzung.</strong> Ohne Anmeldung (kein Abgleich), mit ausgeschalteter KI, ohne Klassenteams und ohne iCloud-Backup für Teachify verlässt keine Schülerangabe das Gerät, außer die Lehrkraft teilt oder exportiert sie selbst.</p>
         <p><strong>Löschfristen.</strong> In Nordrhein-Westfalen sind Schülerdaten auf privaten Geräten ein Jahr nach Ablauf des Kalenderjahres zu löschen, in dem die Lehrkraft das Kind nicht mehr unterrichtet, samt Backups. Teachify löscht Schülerdaten nicht automatisch: Die Lehrkraft löscht Klassen oder abgeschlossene Schuljahre in der App (Abschnitt 9).</p>
-        <p><strong>Restrisiken, offen benannt.</strong> Der Namensschutz erkennt nicht jeden Namen und keine Gesichter (Abschnitt 4). Materialfotos liegen auf dem Gerät nur unter der Verschlüsselung von iOS. In Klassenteams sieht der Server, wer wann was tut (Abschnitt 3). KI-Ergebnisse liegen bis zu 30 Tage mit Platzhaltern auf dem Server und wären mit dessen Schlüssel lesbar. Updates kommen über Expo.</p>
+        <p><strong>Restrisiken, offen benannt.</strong> Der Schutz erkennt nicht jeden Namen und nicht jedes Gesicht (Abschnitt 4). Materialfotos liegen auf dem Gerät nur unter der Verschlüsselung von iOS. In Klassenteams sieht der Server, wer wann was tut (Abschnitt 3). KI-Ergebnisse liegen bis zu 30 Tage mit Platzhaltern auf dem Server und wären mit dessen Schlüssel lesbar. Updates kommen über Expo.</p>
         <p>Auf Anfrage schicken wir unser Verzeichnis der Verarbeitungstätigkeiten, die technischen und organisatorischen Maßnahmen und das Löschkonzept: <a href="mailto:info@familyjourney.app">info@familyjourney.app</a>.</p>
       </section>
 
