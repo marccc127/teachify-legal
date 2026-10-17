@@ -20,7 +20,7 @@
     </header>
     <main class="document">
       <h1>Datenschutz.</h1>
-      <p class="stand">Stand: 16. Oktober 2026</p>
+      <p class="stand">Stand: 17. Oktober 2026</p>
 
       <section aria-labelledby="kurz">
         <h2 id="kurz">Das Wichtigste in Kürze</h2>
@@ -96,6 +96,13 @@
                 <td>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung, jederzeit widerrufbar)</td>
                 <td>Supabase (Weiterleitung und Aufbewahrung der Ergebnisse); OpenAI Ireland Ltd. als Auftragsverarbeiter, Verarbeitung auch in den USA</td>
                 <td>Anfragen speichert Teachify nicht. KI-Ergebnisse und Zwischenstände bis zu 30 Tage, verschlüsselt mit einem Schlüssel des Servers. OpenAI bis zu 30 Tage zur Missbrauchserkennung, Zwischenspeicher für wiederkehrende Anweisungen bis zu 24 Stunden</td>
+              </tr>
+              <tr>
+                <td>Stand eines KI-Auftrags auf dem Sperrbildschirm und in der Dynamic Island (Live-Aktivität)</td>
+                <td>Nutzerkennung, Kennung der Live-Aktivität und ihre Push-Kennung von Apple, Kennungen der KI-Aufträge. Angezeigt werden die Auftragsart aus einer festen Liste (etwa „Arbeitsblatt“), Status, Fortschritt, Start- und Endzeit; dazu kommt der Dateipfad des Teachify-Zeichens auf deinem Gerät. Keine Inhalte. Ältere App-Versionen setzten in den Titel auch eigene Bezeichnungen, etwa den Titel einer Stunde</td>
+                <td>Art. 6 Abs. 1 lit. b DSGVO</td>
+                <td>Supabase (Frankfurt); Apple (Apple Push Notification service) für die Zustellung an dein Gerät</td>
+                <td>Push-Kennung und Anzeige bis zum Ende der Live-Aktivität, der Eintrag selbst bis 24 Stunden danach</td>
               </tr>
               <tr>
                 <td>KI-Kontingent und Abrechnung</td>
@@ -195,7 +202,7 @@
           <li><strong>Kamera und Fotos:</strong> für Klassenlisten (Auswertung auf dem Gerät), Material-Scans und den Stundenplan-Import (vor einer KI-Anfrage geschwärzt) und die Kopplung deiner Geräte per QR-Code. Zum Sichern von Bildern in deiner Mediathek, etwa deines Sicherungscodes.</li>
           <li><strong>Mikrofon und Spracherkennung:</strong> für Diktat und Sprachnotizen. Die Aufnahme wird auf dem Gerät in Text umgewandelt und danach gelöscht.</li>
           <li><strong>Face ID oder Touch ID:</strong> nur für die App-Sperre, wenn du sie einschaltest.</li>
-          <li><strong>Mitteilungen:</strong> Erinnerungen plant die App auf dem Gerät; es gibt keinen Push-Dienst.</li>
+          <li><strong>Mitteilungen und Live-Aktivitäten:</strong> Erinnerungen plant die App auf dem Gerät, ohne Push-Dienst. Den Stand eines KI-Auftrags zeigt eine Live-Aktivität; ihre Aktualisierungen kommen über Apples Push-Dienst (Abschnitt 3). Abschalten kannst du sie unter iOS-Einstellungen › Teachify › Live-Aktivitäten.</li>
         </ul>
         <p>Standort, Kontakte und Kalender fragt Teachify nicht ab.</p>
       </section>
