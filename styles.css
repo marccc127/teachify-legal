@@ -141,3 +141,60 @@ a:focus-visible { outline: 3px solid var(--ink); outline-offset: 4px; }
   .actions { flex-direction: column; align-items: stretch; }
   .button { width: 100%; }
 }
+
+:root { --teal: #0f766e; --coral: #f07167; --coral-text: #b9382d; }
+
+.kontakt-karte {
+  padding: 24px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 8px 24px #14121008;
+  scroll-margin-top: 24px;
+}
+.kontakt-formular { font-size: 1.125rem; }
+.kontakt-formular, .kontakt-erfolg { transition: opacity 240ms ease; }
+.kontakt-formular.verschwindet { opacity: 0; }
+.kontakt-wechsel { transition: height 240ms ease; overflow: hidden; }
+.kontakt-formular fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+.kontakt-formular label { display: block; margin: 16px 0 8px; font-weight: 650; }
+.kontakt-formular input, .kontakt-formular textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--cream);
+  color: var(--ink);
+  font: inherit;
+  overflow-wrap: anywhere;
+}
+.kontakt-formular textarea { resize: vertical; }
+.kontakt-formular input:focus-visible, .kontakt-formular textarea:focus-visible, .kontakt-senden:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 2px;
+}
+.kontakt-formular [aria-invalid="true"] { border-color: var(--coral); }
+.kontakt-formular :disabled { opacity: .7; }
+.kontakt-honigtopf { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+.document .kontakt-hinweis, .document .kontakt-zaehler, .document .kontakt-fehler { font-size: .9375rem; }
+.document .kontakt-hinweis, .document .kontakt-zaehler { color: var(--muted); }
+.kontakt-zaehler { min-height: 24px; text-align: right; }
+.kontakt-meldung { display: grid; grid-template-rows: 0fr; opacity: 0; transition: grid-template-rows 240ms ease, opacity 240ms ease; }
+.kontakt-meldung > div { overflow: hidden; }
+.kontakt-meldung.sichtbar { grid-template-rows: 1fr; opacity: 1; }
+.document .kontakt-fehler { color: var(--coral-text); padding-top: 8px; overflow-wrap: anywhere; }
+.kontakt-senden { display: grid; min-height: 52px; width: 100%; margin-top: 24px; font: inherit; font-weight: 750; cursor: pointer; }
+.kontakt-senden:disabled { cursor: wait; }
+.kontakt-knopf-bereit, .kontakt-knopf-sendet { grid-area: 1 / 1; transition: opacity 160ms ease; }
+.kontakt-knopf-sendet, .sendet .kontakt-knopf-bereit { opacity: 0; }
+.sendet .kontakt-knopf-sendet { opacity: 1; }
+.kontakt-erfolg { opacity: 0; display: flex; align-items: flex-start; gap: 12px; }
+.kontakt-erfolg.sichtbar { opacity: 1; }
+.kontakt-erfolg[hidden], .kontakt-formular[hidden] { display: none; }
+.kontakt-haken { color: var(--teal); font-size: 1.25rem; font-weight: 800; }
+
+@media (prefers-reduced-motion: reduce) {
+  .kontakt-formular, .kontakt-erfolg, .kontakt-wechsel, .kontakt-meldung, .kontakt-knopf-bereit, .kontakt-knopf-sendet { transition: none; }
+}
