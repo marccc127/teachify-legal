@@ -26,9 +26,9 @@
         <h2 id="kurz">Das Wichtigste in Kürze</h2>
         <ul>
           <li><strong>Schülerdaten speichert Teachify verschlüsselt auf deinem Gerät.</strong> Klassenlisten liest dein iPhone oder iPad selbst, Diktate wandelt es selbst in Text um.</li>
-          <li><strong>Abgleich und Klassenteams sind Ende-zu-Ende-verschlüsselt.</strong> Teachify kann diese Inhalte nicht lesen. Lesbar sind Konto- und technische Metadaten, die Abschnitt 3 vollständig aufzählt.</li>
-          <li><strong>KI nur mit deiner Erlaubnis.</strong> Vor jeder Anfrage ersetzt dein Gerät Namen durch Platzhalter und schwärzt erkannte Namen und Gesichter auf Fotos. Verarbeitet werden die Anfragen von OpenAI, auch in den USA. Der Schutz hat Grenzen, die Abschnitt 4 nennt.</li>
-          <li><strong>Kein Tracking.</strong> Teachify nutzt keine Analyse-, Werbe- oder Trackingdienste und keine Cookies.</li>
+          <li><strong>Abgleich und Klassenteams sind Ende-zu-Ende-verschlüsselt.</strong> Teachify kann diese Inhalte nicht lesen. Lesbar sind Konto- und technische Metadaten, die Abschnitt 3 vollständig aufzählt. Meldest du einen Beitrag, schickst du selbst einen Auszug per E-Mail.</li>
+          <li><strong>KI nur mit deiner Erlaubnis.</strong> Mit der Anfrage gehen Unterrichtskontext und, solange du sie nicht abwählst, Klassen-Gedächtnis, Stundennotizen und Lernstand mit. Vorher ersetzt dein Gerät Namen durch Platzhalter und schwärzt erkannte Namen und Gesichter auf Fotos. Verarbeitet werden die Anfragen von OpenAI, auch in den USA. Der Schutz hat Grenzen, die Abschnitt 4 nennt.</li>
+          <li><strong>Kein Werbe- und kein Nutzer-Tracking.</strong> Teachify nutzt keine Werbe- oder Analysedienste und keine Cookies. Zusammengefasst zählen nur Expo die Update-Abfragen (Abschnitt 3) und Brevo die Öffnungen des Newsletters, anonym in Summe (Abschnitt 13).</li>
           <li><strong>Newsletter nur mit Bestätigung.</strong> Er ist freiwillig, enthält Tipps und Hinweise auf die App Teachify und läuft über Brevo mit Speicherung in der EU, ohne Auswertung je Empfänger; Öffnungen und Klicks erfasst Brevo nur anonym in Summe. Abschnitt 13 erklärt die Einzelheiten.</li>
           <li><strong>Für Schulleitungen</strong> fasst Abschnitt 11 alles für eine Genehmigung zusammen.</li>
         </ul>
@@ -88,28 +88,35 @@
                 <td>Verschlüsselt: Teamname, Aufgaben, Kommentare, Notizen und Schülerkarten. Lesbar: Anzeigename, Rolle und Mitgliedschaft samt Zeitpunkten, öffentliche Geräteschlüssel, Einladungen (nur als Prüfwert, mit dem Namen der einladenden Person), wer welche Aufgabe übernommen, bestätigt oder kommentiert hat, Fälligkeitstag, Uhrzeit und Wichtig-Markierung von Aufgaben sowie wann wer eine Notiz zu welchem Kind geschrieben, freigegeben oder gelesen hat; das Kind steht dort nur als zufällige Kennung</td>
                 <td>Art. 6 Abs. 1 lit. b DSGVO; nach Kontolöschung für die verbleibenden Beiträge Art. 6 Abs. 1 lit. f (Nachvollziehbarkeit für das Team)</td>
                 <td>Supabase (Frankfurt); die anderen Mitglieder des Teams</td>
-                <td>Solange das Team besteht, auch archiviert. Nach einer Kontolöschung wird der Anzeigename spätestens am Folgetag zu „Ehemalige Lehrkraft“; Lesestände und private Zuordnungen des Kontos werden gelöscht</td>
+                <td>Solange das Team besteht. Ein archiviertes Team löscht Teachify 365 Tage nach der Archivierung, ein Team ohne Mitglieder 30 Tage nach dem letzten Austritt, jeweils mit allen Inhalten. Eine zurückgezogene Notiz löscht Teachify sofort samt Antworten. Wer das Team verlässt oder entfernt wird und wessen Beitrittsanfrage abgelehnt oder zurückgezogen wird, steht dort sofort nur noch als „Ehemalige Lehrkraft“, nach einer Kontolöschung oder abgelaufenen Anfrage spätestens am Folgetag; Lesestände und private Zuordnungen eines gelöschten Kontos werden gelöscht</td>
               </tr>
               <tr>
                 <td>KI-Hilfe</td>
-                <td>Anfragetext mit Platzhaltern statt erkannter Namen und Kontext wie Klassenkürzel, Fach, Schulform, Bundesland und Unterrichtsstil; Fotos mit geschwärzten Namen und Gesichtern, auch dein Stundenplan (aus einem PDF ein Bild ohne dessen Dokumentangaben); keine Sprachaufnahmen, keine Klassenlistenfotos. KI-Ergebnisse und Zwischenstände</td>
+                <td>Anfragetext mit Platzhaltern statt erkannter Namen; Unterrichtskontext wie Klassenkürzel, Fach, Schulform, Bundesland, Unterrichtsstil, Reihe und frühere Stunden, dazu Klassen-Gedächtnis, Stundennotizen und Lernstand, solange du sie nicht abwählst; Beobachtungen zu einem Kind nur, wenn du sie für einen Text auswählst; Fotos mit geschwärzten Namen und Gesichtern, auch dein Stundenplan (aus einem PDF ein Bild ohne dessen Dokumentangaben); keine Sprachaufnahmen, keine Klassenlistenfotos. KI-Ergebnisse und Zwischenstände</td>
                 <td>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung, jederzeit widerrufbar)</td>
                 <td>Supabase (Weiterleitung und Aufbewahrung der Ergebnisse); OpenAI Ireland Ltd. als Auftragsverarbeiter, Verarbeitung auch in den USA</td>
                 <td>Anfragen speichert Teachify nicht. KI-Ergebnisse und Zwischenstände bis zu 30 Tage, verschlüsselt mit einem Schlüssel des Servers. OpenAI bis zu 30 Tage zur Missbrauchserkennung, Zwischenspeicher für wiederkehrende Anweisungen bis zu 24 Stunden</td>
               </tr>
               <tr>
+                <td>KI-Erlaubnis und KI-Schalter</td>
+                <td>Fassung und Datum deiner KI-Erlaubnis und ihres Widerrufs; ob die KI für dein Konto an ist, mit den Zeitpunkten der Umschaltungen</td>
+                <td>Erlaubnis: Art. 6 Abs. 1 lit. c i. V. m. Art. 7 Abs. 1 DSGVO (Nachweis); Schalter: lit. b</td>
+                <td>Supabase (Frankfurt)</td>
+                <td>Bis zur Löschung des Kontos</td>
+              </tr>
+              <tr>
                 <td>Stand eines KI-Auftrags auf dem Sperrbildschirm und in der Dynamic Island (Live-Aktivität)</td>
-                <td>Nutzerkennung, Kennung der Live-Aktivität und ihre Push-Kennung von Apple, Kennungen der KI-Aufträge. Angezeigt werden die Auftragsart aus einer festen Liste (etwa „Arbeitsblatt“), Status, Fortschritt, Start- und Endzeit; dazu kommt der Dateipfad des Teachify-Zeichens auf deinem Gerät. Keine Inhalte. Ältere App-Versionen setzten in den Titel auch eigene Bezeichnungen, etwa den Titel einer Stunde</td>
+                <td>Nutzerkennung, Kennung der Live-Aktivität und ihre Push-Kennung von Apple, Kennungen der KI-Aufträge. Angezeigt werden die Auftragsart aus einer festen Liste (etwa „Arbeitsblatt“), Status, Fortschritt, Start- und Endzeit; dazu kommt der Dateipfad des Teachify-Zeichens auf deinem Gerät. Keine Inhalte</td>
                 <td>Art. 6 Abs. 1 lit. b DSGVO</td>
                 <td>Supabase (Frankfurt); Apple (Apple Push Notification service) für die Zustellung an dein Gerät</td>
                 <td>Push-Kennung und Anzeige bis zum Ende der Live-Aktivität, der Eintrag selbst bis 24 Stunden danach</td>
               </tr>
               <tr>
                 <td>KI-Kontingent und Abrechnung</td>
-                <td>Nutzerkennung, Punktestand und Buchungen, Kosten je Anfrage, Monat, Woche und Aufgabe, Prüfsumme der Anfrage, Zähler je Minute und Tag; keine Inhalte</td>
-                <td>Art. 6 Abs. 1 lit. b und f DSGVO</td>
+                <td>Nutzerkennung, Punktestand und Buchungen, Kosten je Anfrage, Monat, Woche und Aufgabe, Prüfsumme der Anfrage, Zähler je Minute und Tag; ein Vermerk, dass die Probestunde genutzt ist (Prüfsumme, Zeitpunkt); keine Inhalte</td>
+                <td>Art. 6 Abs. 1 lit. b und f DSGVO (Kosten begrenzen, die Probestunde nur einmal vergeben)</td>
                 <td>Supabase (Frankfurt)</td>
-                <td>Buchungen bis zur Löschung des Kontos; Monats- und Aufgabenkosten 13 Monate, Wochenkosten 5 Wochen, Zähler höchstens 2 Tage. Kostenbelege je Anfrage (Modell, Tokens, Kosten) 13 Monate; zählen sie auf gekaufte KI-Punkte oder deinen noch laufenden Gratis-Start, bis zur Löschung des Kontos und danach ohne Kontobezug höchstens 13 Monate nach der Anfrage. Die Kennung der Anfrage bei OpenAI darin höchstens 35 Tage</td>
+                <td>Buchungen bis zur Löschung des Kontos; Monats- und Aufgabenkosten 13 Monate, Wochenkosten 5 Wochen, Zähler höchstens 2 Tage. Kostenbelege je Anfrage (Modell, Tokens, Kosten) 13 Monate; zählen sie auf gekaufte KI-Punkte oder deinen noch laufenden Gratis-Start, bis zur Löschung des Kontos und danach ohne Kontobezug höchstens 13 Monate nach der Anfrage. Die Kennung der Anfrage bei OpenAI darin höchstens 35 Tage. Den Probestunden-Vermerk löscht Teachify mit dem Konto; ein Vermerk von vor dem 19. Oktober 2026 bleibt ohne Kontobezug höchstens 13 Monate</td>
               </tr>
               <tr>
                 <td>Abo und Käufe</td>
@@ -120,8 +127,8 @@
               </tr>
               <tr>
                 <td>Kontolöschung</td>
-                <td>Auftragskennung, Status, Prüfwert</td>
-                <td>Art. 6 Abs. 1 lit. c und f DSGVO</td>
+                <td>Nutzerkennung, Auftragskennung, Status, Prüfwert</td>
+                <td>Art. 6 Abs. 1 lit. c und f DSGVO (nachweisen, dass gelöscht wurde)</td>
                 <td>Supabase (Frankfurt)</td>
                 <td>30 Tage nach Abschluss</td>
               </tr>
@@ -161,15 +168,15 @@
                 <td>Bis zur Abmeldung; unbestätigte Anmeldungen 30 Tage; Sperrliste bis zu 3 Jahre</td>
               </tr>
               <tr>
-                <td>Anfragen per E-Mail</td>
-                <td>Deine E-Mail-Adresse und Nachricht</td>
-                <td>Art. 6 Abs. 1 lit. b und f DSGVO</td>
-                <td>E-Mail-Anbieter des Verantwortlichen</td>
-                <td>Bis die Anfrage erledigt ist, danach nach gesetzlichen Aufbewahrungsfristen</td>
+                <td>Anfragen per E-Mail und Meldungen aus Klassenteams</td>
+                <td>Deine E-Mail-Adresse und Nachricht; eine Meldung aus einem Klassenteam schickst du als vorbereitete E-Mail selbst ab, mit Teamname, Name des gemeldeten Mitglieds, einem Auszug des Beitrags bis 300 Zeichen und den Kennungen von Team und Mitglied</td>
+                <td>Art. 6 Abs. 1 lit. f DSGVO (Anfragen beantworten); betrifft die Anfrage einen Vertrag, lit. b</td>
+                <td>Strato (Postfach info@familyjourney.app)</td>
+                <td>Im Postfach, bis die Anfrage erledigt ist, danach nach gesetzlichen Aufbewahrungsfristen</td>
               </tr>
               <tr>
                 <td>Rückmeldungen und Wünsche in der App</td>
-                <td>Dein Text oder Diktattext (das Diktat erkennt dein Gerät, eine Audiodatei wird nicht gesendet), vorher ersetzt dein Gerät Schülernamen aus deinen Klassenlisten durch Kürzel; Art der Rückmeldung, Text oder Diktat, Plattform, App-Version und Build, deine Konto-Kennung, Eingangszeit; freiwillig deine E-Mail-Adresse für Rückfragen, nur wenn du sie angibst</td>
+                <td>Dein Text oder Diktattext (das Diktat erkennt dein Gerät, eine Audiodatei wird nicht gesendet), vorher ersetzt dein Gerät Schülernamen aus deinen Klassenlisten und andere erkannte Namen durch Kürzel; Art der Rückmeldung, Text oder Diktat, Plattform, App-Version und Build, deine Konto-Kennung, Eingangszeit; freiwillig deine E-Mail-Adresse für Rückfragen, nur wenn du sie angibst</td>
                 <td>Art. 6 Abs. 1 lit. f DSGVO (Teachify verbessern; bei angegebener E-Mail-Adresse: dir auf Rückfragen zu deinem Beitrag zu antworten)</td>
                 <td>Supabase (Rechenzentrum Frankfurt)</td>
                 <td>12 Monate nach Eingang; mit deinem Konto sofort</td>
@@ -181,7 +188,8 @@
 
       <section aria-labelledby="ki">
         <h2 id="ki">4. KI-Hilfe</h2>
-        <p>Teachify fragt dich vor der ersten KI-Anfrage, ob du die KI-Hilfe erlaubst. Ohne deine Erlaubnis sendet Teachify nichts an die KI. Die Erlaubnis gilt für das Gerät, auf dem du sie gibst. Du widerrufst sie jederzeit in der App unter Einstellungen › Datenschutz; laufende Anfragen brechen dann ab.</p>
+        <p>Teachify fragt dich vor der ersten KI-Anfrage, ob du die KI-Hilfe erlaubst. Ohne deine Erlaubnis sendet Teachify nichts an die KI. Die Erlaubnis gilt für das Gerät, auf dem du sie gibst. Teachify vermerkt sie mit Datum und Textfassung an deinem Konto und fragt erneut, wenn sich der Text wesentlich ändert. Du widerrufst sie jederzeit unter Einstellungen › Daten &amp; Rechtliches › Datenschutz; laufende Anfragen brechen dann ab. Mit dem Schalter „KI-Funktionen“ in den Einstellungen schaltest du die KI für dein Konto auf allen Geräten aus.</p>
+        <p><strong>Was mitgeht.</strong> Mit der Anfrage geht passender Unterrichtskontext mit: Klasse, Reihe und frühere Stunden, dazu Klassen-Gedächtnis, Stundennotizen und Lernstand. Diese drei wählst du unter Einstellungen › Daten &amp; Rechtliches › Datenschutz bei „Mitsenden“ ab. Beobachtungen zu einem Kind gehen nur mit, wenn du sie für einen Text auswählst.</p>
         <p>Vor jeder Anfrage schützt dein Gerät die Daten:</p>
         <ul>
           <li>Namen aus deinen Klassenlisten werden zu Platzhaltern wie S1 und S2: der ganze Name unabhängig von Groß- und Kleinschreibung, Leerzeichen, Bindestrich und Umlautschreibung („Mueller“), als „Vorname Nachname“ und „Nachname, Vorname“; der Vorname allein in der Schreibweise der Liste, mit großem Anfangsbuchstaben oder in Großbuchstaben, jeweils auch im Genitiv. Im Unterrichtsstil schützt das Gerät deine eigenen Worte; die festen Auswahlpunkte bleiben stehen.</li>
@@ -190,7 +198,7 @@
           <li>Auch deinen Stundenplan behandelt das Gerät so. Ein PDF wandelt es vorher auf dem Gerät in ein Bild um, höchstens zwei Seiten; die Dokumentangaben des PDFs, etwa Autor und Titel, gehen nicht mit. Kürzel von Kolleginnen und Kollegen, die nicht als Namen erkennbar sind, und der Name deiner Schule können sichtbar bleiben.</li>
           <li>In die Antwort setzt erst dein Gerät die Namen wieder ein.</li>
         </ul>
-        <p><strong>Grenzen des Schutzes.</strong> Handschrift, Spitznamen, ungewöhnliche Schreibweisen und einen klein geschriebenen Vornamen allein erkennt das Gerät nicht immer, ebenso kleine, verdeckte oder abgewandte Gesichter. Platzhalter verdecken Namen, aber nicht jeden Zusammenhang. Schreib deshalb keine Gesundheitsangaben oder andere sehr persönliche Einzelheiten in KI-Anfragen und fotografiere keine Personen. Ältere App-Versionen schwärzen keine Gesichter, senden deinen Stundenplan ungeschwärzt und ein PDF unverändert; aktualisiere Teachify deshalb.</p>
+        <p><strong>Grenzen des Schutzes.</strong> Handschrift, Spitznamen, ungewöhnliche Schreibweisen und einen klein geschriebenen Vornamen allein erkennt das Gerät nicht immer, ebenso kleine, verdeckte oder abgewandte Gesichter. Platzhalter verdecken Namen, aber nicht jeden Zusammenhang. Schreib deshalb keine Gesundheitsangaben oder andere sehr persönliche Einzelheiten in KI-Anfragen und fotografiere keine Personen.</p>
         <p>Die Anfragen verarbeitet OpenAI in unserem Auftrag. Vertragspartner ist die OpenAI Ireland Ltd. (Dublin); verarbeitet wird auch bei der OpenAI OpCo, LLC in den USA. Mit OpenAI besteht ein Vertrag zur Auftragsverarbeitung (Data Processing Addendum, seit dem 16. Oktober 2026 von beiden Seiten unterschrieben); er enthält die EU-Standardvertragsklauseln für die Übermittlung in die USA. Teachify sendet OpenAI keine Kennung von dir und lässt Anfragen dort nicht für einen späteren Abruf speichern. OpenAI nutzt die Daten nicht zum Training und speichert sie bis zu 30 Tage, um Missbrauch zu erkennen.</p>
         <p>Teachify speichert deine Anfragen nicht. Die KI-Ergebnisse bewahrt Teachify bis zu 30 Tage auf, damit ein bezahltes Ergebnis nicht verloren geht und du es wieder öffnen kannst. Sie liegen verschlüsselt mit einem Schlüssel des Servers in Frankfurt und enthalten die Platzhalter statt der erkannten Namen. Löschst du dein Konto, löscht Teachify sie mit ihm.</p>
         <p>KI-Ergebnisse sind Vorschläge: Prüfe sie, bevor du sie verwendest. Eine automatisierte Entscheidung im Sinne von Art. 22 DSGVO trifft Teachify nicht.</p>
@@ -220,27 +228,29 @@
 
       <section aria-labelledby="drittland">
         <h2 id="drittland">7. Übermittlung in Drittländer</h2>
-        <p>Die Server von Supabase stehen in Frankfurt; Vertragspartner ist die Supabase Pte. Ltd. in Singapur. OpenAI verarbeitet auch in den USA, Expo und GitHub sitzen in den USA; Expo und GitHub sind nach dem EU-US Data Privacy Framework zertifiziert. Die Übermittlung stützt sich auf die EU-Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO), die Bestandteil der Auftragsverarbeitungsverträge sind, und, soweit der Anbieter zertifiziert ist, auf das EU-US Data Privacy Framework (Art. 45 DSGVO). An OpenAI gehen Anfragen nur mit Platzhaltern statt erkannter Namen.</p>
+        <p>Die Server von Supabase stehen in Frankfurt; Vertragspartner ist die Supabase Pte. Ltd. in Singapur. OpenAI verarbeitet auch in den USA, Expo und GitHub sitzen in den USA; Expo und GitHub sind nach dem EU-US Data Privacy Framework zertifiziert. Die Übermittlung stützt sich auf die EU-Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO), die Bestandteil der Auftragsverarbeitungsverträge sind, und, soweit der Anbieter zertifiziert ist, auf das EU-US Data Privacy Framework (Art. 45 DSGVO). An OpenAI gehen Anfragen nur mit Platzhaltern statt erkannter Namen. Eine Kopie der Standardvertragsklauseln schicken wir dir auf Anfrage an <a href="mailto:info@familyjourney.app">info@familyjourney.app</a>.</p>
+        <p>Für Anmeldung und Käufe ist Apple eigener Verantwortlicher, im Europäischen Wirtschaftsraum die Apple Distribution International Ltd. in Irland. Apple speichert Daten in der Regel bei der Apple Inc. in den USA und stützt die Übermittlung nach eigenen Angaben auf die Standardvertragsklauseln. Mehr dazu: <a href="https://www.apple.com/de/legal/privacy/de-ww/">Datenschutzrichtlinie von Apple</a>.</p>
       </section>
 
       <section aria-labelledby="pflicht">
         <h2 id="pflicht">8. Pflicht zur Bereitstellung</h2>
-        <p>Du kannst Teachify ohne Anmeldung nutzen, dann ohne Abgleich zwischen Geräten und ohne Klassenteams; ein anonymes Gastkonto legt Teachify nur an, wenn du ohne Anmeldung etwas kaufst oder einen Kauf wiederherstellst. Für Abgleich und Klassenteams ist die Anmeldung mit Apple nötig. Die KI-Hilfe ist freiwillig; ohne sie stehen alle Funktionen ohne KI weiter zur Verfügung.</p>
+        <p>Du kannst Teachify ohne Anmeldung nutzen, dann ohne Abgleich zwischen Geräten und ohne Klassenteams; ein anonymes Gastkonto legt Teachify nur an, wenn du in der Einrichtung die KI nutzt, ohne Anmeldung etwas kaufst oder einen Kauf wiederherstellst. Für Abgleich und Klassenteams ist die Anmeldung mit Apple nötig. Die KI-Hilfe ist freiwillig; ohne sie stehen alle Funktionen ohne KI weiter zur Verfügung.</p>
       </section>
 
       <section aria-labelledby="loeschen">
         <h2 id="loeschen">9. Löschen und Export</h2>
         <ul>
           <li><strong>Export:</strong> Unter Einstellungen › Daten &amp; Rechtliches exportierst du deine Daten als unverschlüsselte Datei, ohne Fotos und Teamdaten; KI-erzeugte Inhalte enthält der Export nur mit Pro. Auskunft über alle Daten nach Art. 15 DSGVO bekommst du jederzeit per E-Mail.</li>
-          <li><strong>Klassen und Schuljahre:</strong> Eine Klasse löschst du beim Bearbeiten der Klasse; ein einzelnes Kind streichst du dort aus der Namensliste. Ein abgeschlossenes Schuljahr löschst du unter Einstellungen › Archiv. Mit den Kindern löscht Teachify ihre Noten, Beobachtungen, Anwesenheiten, Texte zu ihnen, Kopien davon im Verlauf und in der Sicherung des letzten Schuljahreswechsels, auch auf deinen anderen Geräten. Aus dem verschlüsselten Abgleich entfernt Teachify den Inhalt, wenn das Gerät, auf dem du löschst, die Version ab dem 10. Oktober 2026 hat; früher oder auf einer älteren Version Gelöschtes bleibt dort verschlüsselt und verborgen, bis du dein Konto löschst. Automatisch löscht Teachify Schülerdaten nicht.</li>
-          <li><strong>Konto:</strong> Unter Einstellungen › Konto › Konto löschen › Endgültig löschen entfernst du dein Konto endgültig. Teachify löscht dann dein Konto, den Abgleich, deine Dateien, die KI-Ergebnisse, die Zähler und die Abo-Zuordnung, widerruft die Anmeldung bei Apple und setzt die App auf diesem Gerät zurück. Was ohne Kontobezug bleibt und was in Klassenteams geschieht, steht in Abschnitt 3. Ein Abo kündigst du in den Apple-Abo-Einstellungen.</li>
+          <li><strong>Klassen und Schuljahre:</strong> Eine Klasse löschst du beim Bearbeiten der Klasse; ein einzelnes Kind streichst du dort aus der Namensliste. Ein abgeschlossenes Schuljahr löschst du unter Einstellungen › Archiv. Mit den Kindern löscht Teachify ihre Noten, Beobachtungen, Anwesenheiten, Texte zu ihnen, Kopien davon im Verlauf und in der Sicherung des letzten Schuljahreswechsels, auch auf deinen anderen Geräten. KI-Chat-Nachrichten mit ihren Namen löscht Teachify mit; nennen To-dos oder Termine ihre Namen, fragt Teachify, ob sie mitgehen. Aus dem verschlüsselten Abgleich entfernt Teachify den Inhalt, wenn das Gerät, auf dem du löschst, die Version ab dem 10. Oktober 2026 hat; früher oder auf einer älteren Version Gelöschtes bleibt dort verschlüsselt und verborgen, bis du dein Konto löschst. Automatisch löscht Teachify Schülerdaten nicht.</li>
+          <li><strong>Konto:</strong> Unter Einstellungen › Konto &amp; Abo › Konto löschen › Endgültig löschen entfernst du dein Konto endgültig, auch ein Gastkonto. Teachify löscht dann dein Konto, den Abgleich, deine Dateien, die KI-Ergebnisse, die Zähler und die Abo-Zuordnung, widerruft die Anmeldung bei Apple und setzt die App auf diesem Gerät zurück. Was ohne Kontobezug bleibt und was in Klassenteams geschieht, steht in Abschnitt 3. Ein Abo kündigst du in den Apple-Abo-Einstellungen.</li>
           <li><strong>Gerät:</strong> Abmelden löscht nichts auf dem Gerät. Löschst du die App, sind ihre Daten auf diesem Gerät gelöscht; ein Backup von vor Build 50 kann sie noch enthalten.</li>
         </ul>
       </section>
 
       <section aria-labelledby="rechte">
         <h2 id="rechte">10. Deine Rechte</h2>
-        <p>Du hast das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch gegen Verarbeitungen auf Grundlage berechtigter Interessen (Art. 21). Eine Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen (Art. 7 Abs. 3). Schreib uns dafür an <a href="mailto:info@familyjourney.app">info@familyjourney.app</a>.</p>
+        <p>Du hast das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18) und Datenübertragbarkeit (Art. 20). Eine Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen (Art. 7 Abs. 3). Schreib uns dafür an <a href="mailto:info@familyjourney.app">info@familyjourney.app</a>.</p>
+        <p><strong>Widerspruchsrecht (Art. 21 DSGVO).</strong> Verarbeiten wir Daten auf Grundlage berechtigter Interessen (Art. 6 Abs. 1 lit. f DSGVO), kannst du aus Gründen, die sich aus deiner besonderen Situation ergeben, jederzeit widersprechen. Wir verarbeiten sie dann nicht mehr, außer wir weisen zwingende schutzwürdige Gründe nach, die deine Interessen überwiegen, oder brauchen sie für Rechtsansprüche. Der Zählung von Newsletter-Öffnungen kannst du jederzeit ohne Begründung widersprechen.</p>
         <p>Du kannst dich bei einer Datenschutz-Aufsichtsbehörde beschweren, etwa bei der für uns zuständigen Landesbeauftragten für Datenschutz und Informationsfreiheit Nordrhein-Westfalen (LDI NRW), Kavalleriestraße 2–4, 40213 Düsseldorf, <a href="https://www.ldi.nrw.de">www.ldi.nrw.de</a>.</p>
       </section>
 
@@ -259,13 +269,13 @@
           <li>Abgleich und Klassenteams Ende-zu-Ende-verschlüsselt (AES-256-GCM); der Server in Frankfurt speichert davon nur Chiffretext.</li>
           <li>KI nur nach Einwilligung, nur mit Platzhaltern statt erkannter Namen und mit geschwärzten Namen und Gesichtern auf Fotos; scheitert der Schutz, sendet Teachify nichts.</li>
           <li>Zugriffsregeln auf jeder Server-Tabelle (Row Level Security); Gastkonten ohne Zugriff auf Abgleich und Dateien; Server-Funktionen protokollieren keine Inhalte.</li>
-          <li>Keine Analyse-, Werbe- oder Trackingdienste, keine Weitergabe an Dritte zu eigenen Zwecken.</li>
+          <li>Keine Werbe- oder Analysedienste, kein Nutzer-Tracking, keine Weitergabe an Dritte zu eigenen Zwecken.</li>
           <li>Datenexport, Löschen von Klassen und abgeschlossenen Schuljahren und endgültige Kontolöschung in der App; Löschfristen auf dem Server laut Abschnitt 3.</li>
         </ul>
         <p><strong>Cloud-Backups.</strong> Auch Backups in Cloudspeicher sind ohne diesen Vertrag unzulässig; aus Systembackups mobiler Geräte sind dienstliche Daten auszuschließen (Teil B Nr. 4). Seit Build 50 der App nimmt Teachify sich selbst vom iCloud- und Geräte-Backup aus. Apple garantiert den Ausschluss nicht; die Datenbank öffnet sich aus einem Backup auf einem anderen Gerät aber nur mit dem Sicherungscode, weil ihre Schlüssel das Gerät nicht verlassen. Wer ganz sicher gehen will, schaltet Teachify zusätzlich in den iCloud-Backup-Einstellungen aus.</p>
         <p><strong>Löschfristen.</strong> In Nordrhein-Westfalen sind Schülerdaten auf privaten Geräten ein Jahr nach Ablauf des Kalenderjahres zu löschen, in dem die Lehrkraft das Kind nicht mehr unterrichtet, samt Backups. Teachify löscht Schülerdaten nicht automatisch: Die Lehrkraft löscht Klassen oder abgeschlossene Schuljahre in der App (Abschnitt 9).</p>
         <p><strong>Restrisiken, offen benannt.</strong> Der Schutz erkennt nicht jeden Namen und nicht jedes Gesicht (Abschnitt 4). Materialfotos liegen auf dem Gerät ohne eigene Verschlüsselung der App; beachtet iOS den Backup-Ausschluss nicht, gelangen sie ins Backup. In Klassenteams sieht der Server, wer wann was tut (Abschnitt 3). KI-Ergebnisse liegen bis zu 30 Tage mit Platzhaltern auf dem Server und wären mit dessen Schlüssel lesbar. Updates kommen über Expo.</p>
-        <p>Auf Anfrage schicken wir unser Verzeichnis der Verarbeitungstätigkeiten, die technischen und organisatorischen Maßnahmen und das Löschkonzept: <a href="mailto:info@familyjourney.app">info@familyjourney.app</a>.</p>
+        <p>Auf Anfrage schicken wir unser Verzeichnis der Verarbeitungstätigkeiten, die technischen und organisatorischen Maßnahmen, das Löschkonzept, unsere Abwägung zur Datenschutz-Folgenabschätzung und ein Muster für die Information der Eltern: <a href="mailto:info@familyjourney.app">info@familyjourney.app</a>.</p>
       </section>
 
       <section aria-labelledby="hosting">
