@@ -76,7 +76,7 @@
     if (emailFalsch || textFalsch) { (emailFalsch ? email : nachricht).focus(); return; }
     zustand = 'sendet';
     sendestatus(true);
-    let fehler = 'Senden hat nicht geklappt. Versuche es noch einmal oder schreib an info@familyjourney.app.';
+    let fehler = 'Senden hat nicht geklappt. Versuche es noch einmal oder schreib an kontakt@teachify-studio.de.';
     try {
       const restzeit = Math.max(0, 3000 - (Date.now() - gestartet));
       if (restzeit > 0) await new Promise(resolve => setTimeout(resolve, restzeit));
@@ -85,7 +85,7 @@
         credentials: 'omit', referrerPolicy: 'no-referrer', signal: AbortSignal.timeout(20000),
         body: JSON.stringify({ version: 1, email: adresse, nachricht: text, website: element('kontakt-website').value, gestartet }),
       });
-      if (response.status === 429) fehler = 'Gerade kommen sehr viele Nachrichten an. Versuche es in einer Stunde noch einmal oder schreib an info@familyjourney.app.';
+      if (response.status === 429) fehler = 'Gerade kommen sehr viele Nachrichten an. Versuche es in einer Stunde noch einmal oder schreib an kontakt@teachify-studio.de.';
       if (response.status === 200 && (await response.json()).ok === true) {
         zustand = 'erfolg';
         await erfolg();
